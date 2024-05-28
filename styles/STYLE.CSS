@@ -1,0 +1,130 @@
+/* CUERPO */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E8E7E6;
+}
+
+/* CABECERA */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #70706E;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* logo header */
+header .logo {
+    height: 80px;
+}
+
+/* menu header */
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* imagen carrito header */
+header .cart img {
+    height: 30px;
+    padding-right: 50px;
+}
+
+/* IMÁGENES BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-image.active {
+    opacity: 1;
+}
+
+/* CONTENIDO DE LA PÁGINA */
+main {
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px; 
+}
+
+/* título bienvenida */
+main h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: black;
+}
+
+main h1 .highlightRojo {
+    color: #C21919;
+}
+
+/* textos principales */
+main h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+main h3 {
+    font-size: 1.5em;
+    font-weight: 250; 
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* menú footer */
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
