@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             products.forEach(product => {
                 const productDiv = document.createElement('div');
                 productDiv.className = 'product';
-
+ 
                 productDiv.innerHTML = `
                     <img src="${product.imagen}" alt="${product.nombre}">
                     <h3>${product.equipo}</h3>
