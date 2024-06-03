@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <div class="cart">
-            <img src="assets/img/carritoimg.png" alt="Carrito de la compra">
+            <a href="./carrito.html"><img src="assets/img/carritoimg.png" alt="Carrito de la compra"></a>
         </div>
     </header>
 
@@ -32,7 +32,37 @@
         <h2>La mejor calidad al mejor precio</h2>
         <h3>Disponemos de una amplia selección de camisetas de fútbol, tanto nacionales como internacionales.</h3>
         <h3>¡No te quedes sin la tuya!</h3>
-        <h3> Accede a nuestro catálogo.</h3>
+        <h2>Accede a nuestro <a href="/catalogo.html" class="catalogo-link">CATÁLOGO</a></h2>
+        <br><br><br>
+        <h3>Aceptamos sugerencias</h3>
+        <form id="contact-form" class="styled-form">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar sugerencia</button>
+        </form>
+        <br><br><br>
+        <h3>Nuestros clientes opinan</h3>
+        <div class="bocadillo">
+            <p>Pedro</p>
+            <p>Calidad y servicio inmejorables, repetiré seguro</p>
+        </div>
+        <div class="bocadillo">
+            <p>Sonia</p>
+            <p>Trato al cliente espectacular y el envío muy rápido</p>
+        </div>
+        <div class="bocadillo">
+            <p>Roberto</p>
+            <p>¡La mejor página de camisetas de fútbol en la que comprado nunca!</p>
+        </div>
+        <br><br><br>
+        <h3>¿Dónde estamos?</h3>
+        <h4>Nuestra sede se encuentra en La Camocha, en la ciudad de Gijón.</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.07247017971!2d-5.655162273353952!3d43.48636101320485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3663598a0db15b%3A0xcd169a5db3cb94c6!2sLa%20Camocha%2C%2033350%20Gij%C3%B3n%2C%20Asturias!5e1!3m2!1ses!2ses!4v1717230013180!5m2!1ses!2ses" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <br>
+        <br>
     </main>
 
     <footer>
@@ -45,5 +75,6 @@
     </footer>
 
     <script type="module" src="scripts/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
