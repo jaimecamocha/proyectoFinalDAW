@@ -135,7 +135,7 @@ main .catalogo-link:hover {
     max-width: 800px;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Change this to center for centered text */
+    text-align: left; 
 }
 
 .styled-form label {

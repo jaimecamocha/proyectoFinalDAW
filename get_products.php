@@ -1,14 +1,13 @@
 <?php
-header( "Access-Control-Allow-Origin: *" );
+header("Access-Control-Allow-Origin: *");
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "proyectodaw";
 
-// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }

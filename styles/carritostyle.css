@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #E8E7E6;
+    margin-top: 100px;
 }
 
 /* CABECERA */
@@ -48,6 +49,66 @@ header nav ul li a {
 header .cart img {
     height: 30px;
     padding-right: 50px;
+}
+
+/* CARRITO */
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+/* Botón de eliminar del carrito */
+.remove-from-cart {
+    background-color: #C21919;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-from-cart:hover {
+    background-color: #A41616;
+}
+
+/* Estilo para el contenedor del precio total */
+#total-price-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el precio total */
+#total-price {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Formulario de pedido */
@@ -97,7 +158,6 @@ header .cart img {
     text-align: center;
     margin-top: 20px;
 }
-
 
 /* FOOTER */
 footer {
