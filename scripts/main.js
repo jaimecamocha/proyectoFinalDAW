@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeImage, 4000);
 });
 
-
+ 
 //envío al correo de las sugerencias del cliente a través del formulario
 (function(){
     emailjs.init("p3zMs5W5lxXz-FugB");
