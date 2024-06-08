@@ -62,10 +62,3 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error en la solicitud:', error));
 });
-
-function updateTotalPrice() {
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-    const totalPrice = cartItems.reduce((sum, item) => sum + item.precio, 0);
-    const totalPriceElement = document.getElementById('total-price');
-    totalPriceElement.textContent = `Total: ${totalPrice.toFixed(2)} €`;
-}
