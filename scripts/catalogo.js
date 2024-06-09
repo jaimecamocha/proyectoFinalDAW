@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 productDiv.innerHTML = `
                     <h3>${product.nombre}</h3>
-                    <img src="${product.imagen}" alt="${product.nombre}">
+                    <img src="../assets/img/productos/${product.imagen}" alt="${product.nombre}">
                     <p>Equipo: ${product.equipo}</p>
                     <p>Precio: ${product.precio} €</p>
                     <select class="size-selector">
